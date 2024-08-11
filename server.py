@@ -25,7 +25,7 @@ def gen_frames():
         success, imagem = video.read()
         if not success:
             break
-
+            
         imagem = cv.resize(imagem, (600, 700))
         imgContours = imagem.copy()
         gabarito, bbox = extrairMaiorCtn(imagem)
